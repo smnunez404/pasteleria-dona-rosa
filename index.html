@@ -911,7 +911,7 @@
 <script>
   // ===== Datos para completar =====
   const WHATSAPP = '59165935416';   // Número con código de país, sin espacios. Ej.: '59165935416'
-  const FORM_URL = '';   // Enlace "incrustar" del formulario de Google (termina en ?embedded=true)
+  const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfFponILt2DB6shSnB1YOc8blJURcDowKZUKxvLvqKst8z0SQ/viewform?embedded=true';   // Enlace "incrustar" del formulario de Google (termina en ?embedded=true)
 
   const wa = (texto) => `https://wa.me/${WHATSAPP.replace(/\D/g, '')}?text=${encodeURIComponent(texto)}`;
   document.querySelectorAll('[data-wa]').forEach(a => { a.href = wa(a.dataset.wa); });
